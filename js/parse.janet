@@ -46,4 +46,4 @@
 (defn make-tree
   "Turn a string of source code into a tree that will be printed"
   [source]
-  [:top (peg/match parse-peg source)])
+  [:top (peg/match parse-peg (macex source))])
